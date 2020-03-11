@@ -1,137 +1,161 @@
 <template>
-  <div class="hello">
-    <div class="work">
-      <div class="workLeft">
-        <div class="head">
-          <div class="headImg">
-            <img src="../assets/logo.png" alt style="width:100%" />
-          </div>
-          <div class="headCentre">
-            <span class="headFont">Dashboard</span>
-            <span class="headFont">Services</span>
-            <span class="headFont">History</span>
-            <span class="headFont">Actions</span>
-          </div>
-          <div class="hesdRight">
-            <input type="text" class="input" />
-            <span class="button">
-              <img src="../assets/fandajing.png" alt style="width:90%" />
-            </span>
-          </div>
-        </div>
-        <div class="split">
-          <span>Cards</span>
-          <span>View all cards</span>
-        </div>
-        <div style="display: flex;">
-          <div class="card">
-            <p class="cardHead">Available balance</p>
-            <p class="cardPrice">$ 2,200</p>
-            <p class="cardnum">**** **** **** **34</p>
-            <p class="cardname">Monzo</p>
-            <div>
-              <div class="cardun">
-                <div class="carduni carduniLeft"></div>
-                <div class="carduni"></div>
-              </div>
+  <div class="bg">
+    <div class="hello">
+      <div class="work">
+        <div class="workLeft">
+          <div class="head">
+            <div class="headImg">
+              <img src="../assets/logo.png" alt style="width:100%" />
             </div>
-          </div>
-          <div class="card azury">
-            <p class="cardHead">Available balance</p>
-            <p class="cardPrice">$ 2,200</p>
-            <p class="cardnum">**** **** **** **34</p>
-            <p class="cardname">Monzo</p>
-            <div>
-              <div class="cardun">
-                <div class="carduni carduniLeft"></div>
-                <div class="carduni"></div>
-              </div>
+            <div class="headCentre">
+              <span class="headFont">Dashboard</span>
+              <span class="headFont">Services</span>
+              <span class="headFont">History</span>
+              <span class="headFont">Actions</span>
             </div>
-          </div>
-          <div class="card white">
-            <img src="../assets/jia.png" alt class="addCardImg" />
-            <p class="newCard">Add New Card</p>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="lower">
-            <div class="split">
-              <span class="lowerLeft">Main Services</span>
-              <span class="lowerRight">View all</span>
-            </div>
-            <div class="flex">
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/weibiaoti8.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/huaban.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/tubiaozhizuomoban-.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/weibolu.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/Concise.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-              <div class="lowerFoot">
-                <table></table>
-                <img src="../assets/jiantouarrow491.png" alt class="lowerFootImg" />
-                <p class="lowerFootTitle">Transactions</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="split">
-              <span>Current</span>
-              <span>View all</span>
-            </div>
-            <div>
-              <span>
-                1063873637834
-                <span>----------------------------------------------------</span>
+            <div class="hesdRight">
+              <input type="text" class="input" placeholder="search..." />
+              <span class="button">
+                <img src="../assets/fandajing.png" alt style="width:90%" />
               </span>
-              <span>$2,200.01</span>
             </div>
-            <div>
-              <span>
-                1063873637834
-                <span>----------------------------------------------------</span>
-              </span>
-              <span>$2,200.01</span>
+          </div>
+          <div class="split">
+            <span class="lowerLeft">Cards</span>
+            <span class="lowerRight">View all cards</span>
+          </div>
+          <div class="nav">
+            <div class="card">
+              <p class="cardHead">Available balance</p>
+              <p class="cardPrice">$ 2,200</p>
+              <p class="cardnum">**** **** **** **34</p>
+              <p class="cardname">Monzo</p>
+              <div>
+                <div class="cardun">
+                  <div class="carduni carduniLeft"></div>
+                  <div class="carduni"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <span>
-                1063873637834
-                <span>----------------------------------------------------</span>
-              </span>
-              <span>$2,200.01</span>
+            <div class="card azury">
+              <p class="cardHead">Available balance</p>
+              <p class="cardPrice">$ 1,300.89</p>
+              <p class="cardnum">**** **** **** **67</p>
+              <p class="cardname">Monzo</p>
+              <div>
+                <div class="cardun">
+                  <div class="carduni carduniLeft"></div>
+                  <div class="carduni"></div>
+                </div>
+              </div>
             </div>
-            <div>
+            <div class="card white">
+              <img src="../assets/jia.png" alt class="addCardImg" />
+              <p class="newCard">Add New Card</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="lower">
               <div class="split">
                 <span class="lowerLeft">Main Services</span>
                 <span class="lowerRight">View all</span>
               </div>
+              <div class="flex top">
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/weibiaoti8.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Transactions</p>
+                </div>
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/huaban.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Uttty</p>
+                </div>
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/tubiaozhizuomoban-.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Loans</p>
+                </div>
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/weibolu.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Deposits</p>
+                </div>
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/Concise.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Fast transfer</p>
+                </div>
+                <div class="lowerFoot">
+                  <table></table>
+                  <img src="../assets/jiantouarrow491.png" alt class="lowerFootImg" />
+                  <p class="lowerFootTitle">Exhange</p>
+                </div>
+              </div>
+            </div>
+            <div class="footCenter">
+              <div class="split">
+                <span class="lowerLeft">Current</span>
+                <span class="lowerRight">View all</span>
+              </div>
               <div>
-                <div id="category" :style="{width: '250px', height: '150px'}"></div>
+                <div class="bottom">
+                  <span class="lowerRight">
+                    1063873637834
+                    <span
+                      class="bilateral"
+                    >- - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+                  </span>
+                  <span class="lowerLeft">$ 2,200.01</span>
+                </div>
+                <div class="bottom">
+                  <span class="lowerRight">
+                    1063873633467
+                    <span
+                      class="bilateral"
+                    >- - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+                  </span>
+                  <span class="lowerLeft">$ 1,300.89</span>
+                </div>
+                <div class="bottom">
+                  <span class="lowerRight">
+                    1063873639987
+                    <span
+                      class="bilateral"
+                    >- - - - - - -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+                  </span>
+                  <span class="lowerLeft">$ 1,848.11</span>
+                </div>
+              </div>
+              <div>
+                <div class="split">
+                  <span class="lowerLeft">Main Services</span>
+                  <span class="lowerRight">View all</span>
+                </div>
+                <div class="flex">
+                  <div id="category" :style="{width: '350px', height: '220px'}"></div>
+                  <div class="small">
+                    <div class="flex bottom">
+                      <span class="lowerRight">Tobal</span>
+                      <span class="lowerLeft">$100.09</span>
+                    </div>
+                    <div class="flex bottom">
+                      <span class="lowerRight">Tobal</span>
+                      <span class="lowerLeft">$2567.89</span>
+                    </div>
+                    <div class="flex bottom">
+                      <span class="lowerRight">Tobal</span>
+                      <span class="lowerLeft">$1848.11</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="aside">
-        <Aside />
+        <div class="aside">
+          <Aside />
+        </div>
       </div>
     </div>
   </div>
@@ -152,7 +176,26 @@ export default {
   },
   methods: {
     drawLine() {
-      let myChart = this.$echarts.init(document.getElementById("category"));
+      // 基于准备好的dom，初始化echarts实例
+      let category = this.$echarts.init(document.getElementById("category"));
+      // 绘制图表
+      category.setOption({
+        xAxis: {
+          type: "category",
+          data: ["0", "$10", "$20", "$30", "$40", "$50"]
+        },
+        yAxis: {
+          type: "value",
+           minInterval: 25
+        },
+        series: [
+          {
+            data: [0, 35, 27, 50, 38, 80],
+            type: "line",
+            smooth: true
+          }
+        ]
+      });
     }
   }
 };
@@ -160,37 +203,50 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.bg {
+  width: 100rem;
+  height: 68rem;
+  padding: 2rem;
+  background: #fdebeb;
+  background-image: url('../assets/bg.jpg');
+}
 .hello {
   position: relative;
-  width: 57.5rem;
-  padding-left: 1.875rem;
-  padding-top: 1.25rem;
-  margin: o auto;
-  border: 0.25rem solid rgb(0, 145, 170);
-  border-radius: 2.3rem;
+  width: 91.25rem;
+  height: 60rem;
+  margin: 2rem;
+  padding-left: 4.375rem;
+  padding-top: 2.8125rem;
+  border: 1rem solid #fbc3be;
+  border-radius: 5rem;
+  box-shadow: 0 0 5rem 1rem #fbc3be;
+  background: #fdfdfd;
 }
 .workLeft {
-  width: 40.875rem;
+  width: 56.875rem;
 }
 .head {
   display: flex;
+  width: 56.875rem;
+  margin-bottom: 4rem;
 }
 .headImg {
-  width: 2rem;
+  width: 2.8125rem;
+  margin-right: 7.875rem;
 }
 .headFont {
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .headCentre {
-  margin-left: 3rem;
-  margin-right: 0.6rem;
-  width: 20rem;
+  width: 24.375rem;
+  margin-right: 5.625rem;
   padding-top: 0.625rem;
   display: flex;
   justify-content: space-around;
 }
 .hesdRight {
+  width: 16.875rem;
   margin-left: 2.5rem;
   display: flex;
   justify-content: space-around;
@@ -209,73 +265,78 @@ export default {
   padding-left: 0.625rem;
 }
 .button {
-  padding-top: 0.08rem;
   width: 2.25rem;
 }
 .split {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.875rem;
-  margin-bottom: 0.9375rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.nav {
+  display: flex;
+  margin-bottom: 3rem;
 }
 .card {
   position: relative;
-  width: 11.25rem;
-  height: 6.25rem;
-  background: pink;
-  border-radius: 0.625rem;
-  padding: 0.3125rem;
-  padding-left: 0.9375rem;
+  width: 19rem;
+  height: 8.5rem;
+  background: #ff4d56;
+  border-radius: 1.2rem;
+  padding: 1.3125rem;
   margin-right: 1.2rem;
 }
 .cardHead {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .cardPrice {
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
   color: #fff;
+  font-size: 1.3rem;
+}
+.cardnum {
+  margin-top: 2rem;
+  font-size: 1.4rem;
 }
 .cardname {
-  margin-top: -1rem;
+  color: #fff;
+  font-size: 1.3rem;
 }
 .cardun {
   margin: 0;
-  width: 2.5rem;
-  height: 1.5rem;
   position: absolute;
   border-radius: 0.6rem;
-  top: 4.375rem;
-  right: 0.5rem;
+  right: 1rem;
+  bottom: 1rem;
 }
 .carduni {
   display: inline-block;
-  width: 1.25rem;
+  width: 1.5rem;
   height: 1.5rem;
-  background: #ff0;
+  background: #ffc24b;
   border-radius: 50%;
 }
 .carduniLeft {
-  background: red;
+  background: #e30613;
   margin-right: -0.3125rem;
 }
 .white {
   background: #eee;
+  margin-right: 0;
+  text-align: center;
 }
 .azury {
-  background: royalblue;
+  background: #0e809a;
 }
 .addCardImg {
-  display: block;
-  margin-top: 2rem;
-  margin-left: 4.5rem;
+  margin-top: 3.125rem;
   width: 2rem;
 }
 .newCard {
-  padding-left: 2.2rem;
   margin-top: 0.2rem;
 }
 .lower {
-  width: 10.7rem;
+  width: 16.25rem;
 }
 .lowerLeft {
   font-size: 0.875rem;
@@ -291,27 +352,38 @@ export default {
   justify-content: space-between;
 }
 .lowerFoot {
-  width: 5.0625rem;
-  height: 5.0625rem;
-  background: seashell;
-  border-radius: 0.7rem;
-  margin-bottom: 0.5rem;
+  width: 110px;
+  height: 110px;
+  border-radius: 1.25rem;
+  text-align: center;
+  background: #ffffff;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 0 0.5rem 0.5rem #f6f7f9;
 }
-
 .lowerFootImg {
-  display: block;
-  margin-top: 0.6rem;
-  margin-left: 1.2rem;
+  margin-top: 1.25rem;
   width: 2.5rem;
 }
 .lowerFootTitle {
   padding: 0.4rem;
-  margin-top: 0.15rem;
   font-size: 0.6rem;
+}
+.footCenter {
+  width: 37.5rem;
+}
+.bottom {
+  margin-bottom: 1.7rem;
+}
+.bilateral {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.small {
+  width: 11.25rem;
 }
 .aside {
   position: absolute;
-  top: 0;
+  top: 0rem;
   right: 0;
 }
 </style>

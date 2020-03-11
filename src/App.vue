@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld class="mg"/>
   </div>
 </template>
 
@@ -17,10 +17,15 @@ export default {
 
 <style>
 #app {
+  width: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
+}
+*{
+  margin:0;
+  padding:0;
 }
 </style>

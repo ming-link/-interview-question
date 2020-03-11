@@ -1,22 +1,17 @@
 <template>
   <div class="homeRight">
     <div class="news">
-      <div>
+      <div class="hint">
         <img src="../assets/lingdang.png" alt class="newsImg" />
-        <span></span>
+        <div class="dot"></div>
       </div>
       <div>
         <b class="userName">Anastasia</b>
         <img src="../assets/touxiang.jpeg" alt class="newst" />
       </div>
     </div>
-    <div class="pie">
-      <div id="pie" :style="{width: '150px', height: '150px'}"></div>
-      <div class="pieCentre">
-        <b style="font-size:1.2rem">$5,349</b>
-        <br />
-        <span style="font-size:0.6rem;padding-left:0.4rem">Balance</span>
-      </div>
+    <div class="p">
+      <div id="p" :style="{width: '222px', height: '222px'}"></div>
     </div>
     <div class="list">
       <div class="news">
@@ -29,26 +24,32 @@
       <div>
         <div class="news top">
           <img src="../assets/qiu.png" alt class="listImg" />
-          <b class="brief">Dribbble Pro Plan</b>
-          <b class="brief money">- $100</b>
+          <div class="itemFont">
+            <b class="brief">Dribbble Pro Plan</b>
+            <b class="brief money">- $100</b>
+          </div>
         </div>
         <div class="news top">
           <img src="../assets/san (2).png" alt class="listImg" />
-          <b class="brief">Dribbble Pro Plan</b>
-          <b class="brief money">- $100</b>
+          <div class="itemFont">
+            <b class="brief">Dribbble Pro Plan</b>
+            <b class="brief money addMoney">- $230</b>
+          </div>
         </div>
         <div class="news top">
           <img src="../assets/san (1).png" alt class="listImg" />
-          <b class="brief">Dribbble Pro Plan</b>
-          <b class="brief money">- $100</b>
+          <div class="itemFont">
+            <b class="brief">Dribbble Pro Plan</b>
+            <b class="brief money">- $3000</b>
+          </div>
         </div>
       </div>
       <div class="foot">
         <button class="button">
-          <span class="buttonIn">Rransfer Money</span>
+          <span class="buttonIn">Transfer Money</span>
           <img src="../assets/jiantou.png" alt class="buttonImg" />
         </button>
-        <img src alt />
+        <img src="../assets/communicate.png" alt class="footXi" />
       </div>
     </div>
   </div>
@@ -71,24 +72,27 @@ export default {
   methods: {
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
-      let pie = this.$echarts.init(document.getElementById("pie"));
+      let p = this.$echarts.init(document.getElementById("p"));
       // 绘制图表
-      pie.setOption({
-        tooltip: {
+      p.setOption({
+         title: { text: '$5,349',subtext:'Balance',left:'center',top:'center',textStyle:{fontStyle:'normal', fontSize:22},subtextStyle:{top:'y:10'} },
+         tooltip: {
           trigger: "item"
         },
         legend: {
           orient: "vertical"
         },
+        color:['white','#212f46','#0e809a','#ff2934',],
         series: [
           {
-            name: "访问来源",
+            name: "",
             type: "pie",
-            radius: ["75%", "100%"],
-            avoidLabelOverlap: false,
+            radius: ["65%", "85%"],
+            avoidLabelOverlap: true,
+             roundCap:true,
             label: {
               normal: {
-                show: false,
+                show: true,
                 position: "center"
               },
               emphasis: {
@@ -115,32 +119,54 @@ export default {
 
 <style scoped>
 .homeRight {
-  width: 13.75rem;
-  height: 33.2rem;
-  border-radius: 2rem;
+  width: 23.75rem;
+  height: 58.75rem;
+  border-radius: 5rem;
   background: white;
-  padding: 0.625rem;
+  padding: 2rem;
+  box-shadow: -0.3125rem 0 1rem -0.2rem #f6f7f9;
 }
 .news {
   display: flex;
   justify-content: space-between;
 }
+.hint {
+  position: relative;
+}
+.dot {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: red;
+  border-radius: 50%;
+  top: .4rem;
+  right: .4rem;
+}
+.itemFont {
+  width: 15rem;
+  line-height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+}
 .newsImg {
-  width: 1.875rem;
+  width: 2.2rem;
 }
 .newst {
-  width: 2.5rem;
+  width: 3rem;
   border-radius: 50%;
   vertical-align: middle;
 }
 .userName {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  padding-right: 0.525rem;
 }
-.pie {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 2.1875rem;
+.p {
+  width: 23.75rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-left: 5rem;
   position: relative;
 }
 .pieCentre {
@@ -150,7 +176,7 @@ export default {
   left: 5.3rem;
 }
 .top {
-  margin-top: 0.9375rem;
+  margin-top: 1.5rem;
 }
 .list {
   padding: 0.5rem;
@@ -163,23 +189,32 @@ export default {
   width: 0.5rem;
 }
 .listImg {
-  width: 1.5rem;
+  width: 3.75rem;
+  background: white;
 }
 .brief {
   display: inline-block;
   padding-top: 0.2rem;
   font-size: 0.75rem;
 }
+.money {
+  color: red;
+}
+.addMoney {
+  color: #0e809a;
+}
 .foot {
-  margin-top: 1.875rem;
+  margin-top: 4rem;
   position: relative;
 }
 .button {
+  display: block;
   width: 100%;
-  background: #d6204b;
-  padding-left: 1rem;
-  padding-right: 0.8rem;
-  border-radius: 0.9375rem;
+  height: 3.125rem;
+  background: #ff4d56;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
   border: 0;
   outline: 0;
   display: flex;
@@ -187,10 +222,19 @@ export default {
 }
 .buttonIn {
   display: inline-block;
-  margin-top: 0.3125rem;
+  margin-top: 0.7rem;
+  color: azure;
 }
 .buttonImg {
-  width: 1.8rem;
+  width: 2.5rem;
   vertical-align: middle;
+}
+.footXi {
+  display: block;
+  width: 2.5rem;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 9rem;
 }
 </style>
